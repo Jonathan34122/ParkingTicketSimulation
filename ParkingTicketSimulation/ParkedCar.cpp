@@ -5,6 +5,24 @@ ParkedCar::ParkedCar(string make, string model, string color, string license, in
 	this->make = make;
 	this->model = model;
 	this->color = color;
-	this->licensceNumber = licensceNumber;
+	this->licenseNumber = licenseNumber;
 	this->minutesParked = minutesParked;
+}
+
+// Define Getters
+
+string ParkedCar::getMake() const {
+	return make;
+}
+string ParkedCar::getModel() const {
+	return model;
+}
+string ParkedCar::getColor() const {
+	return color;
+}
+string ParkedCar::getLicense() const {
+	return licenseNumber;
+}
+int ParkedCar::getMinutes() const {
+	return minutesParked;
 }
