@@ -9,7 +9,7 @@ ParkedCar::ParkedCar(string make, string model, string color, string license, in
 	this->minutesParked = minutesParked;
 }
 
-// Define Getters
+// Initialize Getters
 
 string ParkedCar::getMake() const {
 	return make;

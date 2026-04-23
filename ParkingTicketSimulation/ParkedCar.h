@@ -18,7 +18,7 @@ public:
 
 	ParkedCar(string make, string model, string color, string license, int minutes);
 	
-	// Initialize Getters
+	// Define Getters
 
 	string getMake() const;
 	string getModel() const;
