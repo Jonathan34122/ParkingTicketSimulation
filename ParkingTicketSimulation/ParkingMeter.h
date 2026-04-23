@@ -14,7 +14,7 @@ private:
 
 public:
 
-	ParkingMeter(int minutes);
+	ParkingMeter(int minutes); // Constructor
 
 	int getMinutesPurchased() const;
 
