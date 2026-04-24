@@ -10,7 +10,7 @@ class ParkingTicket{
 
 private:
 
-	ParkedCar car;
+	ParkedCar car; // Composition
 	int minutesOver;
 	double fine;
 	string officerName;
@@ -20,7 +20,7 @@ private:
 
 public:
 
-	ParkingTicket(const ParkedCar& c, int minutesOver, string officerName, string badgeNumber);
+	ParkingTicket(const ParkedCar& c1, int minutesOver, string officerName, string badgeNumber);
 
 	double getFine() const;
 	void printTicket();
