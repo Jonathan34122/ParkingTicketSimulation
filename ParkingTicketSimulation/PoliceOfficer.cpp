@@ -9,7 +9,7 @@ ParkingTicket* PoliceOfficer::inspectCar(const ParkedCar& car, const ParkingMete
 
 	int minutesOver = car.getMinutes() - meter.getMinutesPurchased();
 
-	if (minutesOver < 0) {
+	if (minutesOver > 0) {
 
 		return new ParkingTicket(car, minutesOver, name, badgeNumber);
 
