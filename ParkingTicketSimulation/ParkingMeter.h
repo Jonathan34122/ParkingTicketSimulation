@@ -10,8 +10,6 @@ private:
 	int minutesPurchased;
 
 
-
-
 public:
 
 	ParkingMeter(int minutes); // Constructor

@@ -1,7 +1,7 @@
 #include "ParkedCar.h"
 
 
-ParkedCar::ParkedCar(string make, string model, string color, string license, int minutes) {
+ParkedCar::ParkedCar(string make, string model, string color, string licenseNumber, int minutesParked) {
 	this->make = make;
 	this->model = model;
 	this->color = color;
