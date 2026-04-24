@@ -1,8 +1,8 @@
 #include "PoliceOfficer.h"
 
 PoliceOfficer::PoliceOfficer(string name, string badgeNumber) {
-	name = this->name;
-	badgeNumber = this->badgeNumber;
+	this->name = name;
+	this->badgeNumber = badgeNumber;
 }
 
 ParkingTicket* PoliceOfficer::inspectCar(const ParkedCar& car, const ParkingMeter& meter) const { // Aggregation
