@@ -8,7 +8,7 @@ using namespace std;
 
 int main(){
 
-	PoliceOfficer PoliceMan("Marcus", "4291");
+	PoliceOfficer PoliceMan("Marcus Brown", "4291");
 
 	ParkedCar car1("BMW", "M2", "White", "OVQ-1492", 390);
 	ParkingMeter meter1(120); // !payed below spent time!

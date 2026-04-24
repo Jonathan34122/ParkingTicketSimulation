@@ -9,6 +9,8 @@ ParkingTicket::ParkingTicket(const ParkedCar& c1, int minutesOver, string office
 	this->minutesOver = minutesOver;
 	this->officerName = officerName;
 	this->badgeNumber = badgeNumber;
+	this->fine = 0.0;
+	calculateFine();
 
 }
 
@@ -29,12 +31,12 @@ double ParkingTicket::getFine() const {
 
 void ParkingTicket::printTicket() {
 
-	cout << "-----Parking Fine-------";
+	cout << "-----Parking Fine-------\n";
 	cout << "Vehicle: " << car.getMake() << " " << car.getModel() << " " << car.getColor() << endl;
 	cout << "License: " << car.getLicense() << endl;
 	cout << "Minutes Parked: " << car.getMinutes() << endl;
 	cout << "Minutes Over: " << minutesOver << endl;
 	cout << "Amount to be Paid: $" << fine << endl;
-	cout << "Officer: " << officerName << "badge #" << badgeNumber << endl;
+	cout << "\nOfficer: " << officerName << "\nbadge#" << badgeNumber << endl;
 
 }
